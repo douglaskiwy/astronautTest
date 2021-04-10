@@ -85,22 +85,22 @@ blend_point_2/pos = Vector2( 0, -1 )
 blend_point_3/node = SubResource( 12 )
 blend_point_3/pos = Vector2( -1, 0 )
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=16]
+[sub_resource type="AnimationNodeStateMachineTransition" id=14]
 switch_mode = 2
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=17]
+[sub_resource type="AnimationNodeStateMachineTransition" id=15]
 switch_mode = 2
 
-[sub_resource type="AnimationNodeStateMachine" id=14]
+[sub_resource type="AnimationNodeStateMachine" id=16]
 states/Idle/node = SubResource( 8 )
 states/Idle/position = Vector2( 364, 149 )
 states/Run/node = SubResource( 13 )
 states/Run/position = Vector2( 620, 149 )
-transitions = [ "Idle", "Run", SubResource( 16 ), "Run", "Idle", SubResource( 17 ) ]
+transitions = [ "Idle", "Run", SubResource( 14 ), "Run", "Idle", SubResource( 15 ) ]
 start_node = "Idle"
 graph_offset = Vector2( -102.426, 8.33492 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=15]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=17]
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -109,7 +109,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -10 )
 texture = ExtResource( 1 )
 hframes = 6
-frame = 1
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
@@ -121,9 +121,9 @@ anims/IdleDown = SubResource( 2 )
 anims/RunDown = SubResource( 3 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 14 )
+tree_root = SubResource( 16 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/playback = SubResource( 15 )
+parameters/playback = SubResource( 17 )
 parameters/Idle/blend_position = Vector2( -0.00183153, 0.994186 )
 parameters/Run/blend_position = Vector2( 0, 0 )
