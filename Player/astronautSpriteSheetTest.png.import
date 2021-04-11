@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/astronautSpriteSheetTest.png-f662f0c0d7323a7edb3fb64c868ca0f4.stex"
+path="res://.import/astronautSpriteSheetTest.png-d393bd8a138c1e854bf55ef1ceca00f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://astronautSpriteSheetTest.png"
-dest_files=[ "res://.import/astronautSpriteSheetTest.png-f662f0c0d7323a7edb3fb64c868ca0f4.stex" ]
+source_file="res://Player/astronautSpriteSheetTest.png"
+dest_files=[ "res://.import/astronautSpriteSheetTest.png-d393bd8a138c1e854bf55ef1ceca00f6.stex" ]
 
 [params]
 

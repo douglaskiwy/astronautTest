@@ -10,18 +10,18 @@
 script = ExtResource( 4 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 132, 36 )
+position = Vector2( 21, 92 )
 
 [node name="Rock" parent="." instance=ExtResource( 2 )]
-position = Vector2( 63, 76 )
+position = Vector2( 93, 52 )
 
 [node name="Rock2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 155, 127 )
+position = Vector2( 186, 162 )
 
 [node name="Rock3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 254, 70 )
+position = Vector2( 231, 101 )
 
 [node name="Oxygen" parent="." instance=ExtResource( 3 )]
 
 [node name="O2Cannister" parent="." instance=ExtResource( 5 )]
-position = Vector2( 270, 147 )
+position = Vector2( 295, 103 )

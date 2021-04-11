@@ -3,7 +3,7 @@ extends Label
 signal player_lost_all_oxygen
 
 onready var timer = $Timer
-var oxygen = 50
+var oxygen = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
